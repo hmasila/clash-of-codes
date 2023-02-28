@@ -31,7 +31,7 @@ def calculate_baseball_score(operations)
   return stack.sum
 end
 
-
+# ***********************
 # Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 # An input string is valid if:
@@ -58,7 +58,7 @@ def is_valid(s)
   stack.empty?
 end
 
-
+# *******************
 # Write a ruby program to get the number that only appears once in an array
 
 def find_single_number(nums)
@@ -71,6 +71,7 @@ end
 nums = [1, 2, 2, 3, 3, 4, 4, 5, 5]
 puts find_single_number(nums) # Output: 1
 
+# ************************
 # Given a string s return the max path you can get to move from one letter to another identical one in s. If there's no such thing, return -1
 
 def max_path(s)
