@@ -176,3 +176,47 @@ def bitwise_operation(mode, bin1, bin2, result)
     false
   end
 end
+
+# *****************************
+# Print the smallest odd number from a user input
+
+numbers = gets.chomp.split(" ").map(&:to_i)
+smallest_odd = numbers.select(&:odd?).min
+
+# ***************************
+# Ben and Tom send messages to you describing the temperature in their respective countries.
+# Ben lives in the USA
+# Tom lives in the UK
+# Ben uses Fahrenheit
+# Tom uses Celsius
+
+# Ben and Tom will send you their inputs as one integer each b and t, separated by a space. There will be n such lines of inputs.
+# For each line, output the string "Higher" if Ben's temperature is higher than Tom's, and output the string "Lower" if Ben's temperature is lower than Tom's. If the temperatures are the same output the string "Same".
+
+# Conversion from C Celsius to F Fahrenheit follows the formula C x 9 / 5 + 32 = F
+
+n = gets.chomp.to_i
+
+n.times do
+  b, t = gets.chomp.split.map(&:to_i)
+
+  fahrenheit = t * 9 / 5.0 + 32
+
+  if b > fahrenheit
+    puts "Higher"
+  elsif b < fahrenheit
+    puts "Lower"
+  else
+    puts "Same"
+  end
+end
+
+# ******************
+# Given a number N sum up all even numbers from 2 to N
+
+puts (2..n).step(2).sum
+
+# *******************
+# Given a string, convert each character to ASCII
+
+string.chars.map(&:ord).join(' ')
