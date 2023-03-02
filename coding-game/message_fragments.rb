@@ -12,7 +12,6 @@ def reconstruct_message(fragments)
   message_parts = Hash.new(0)
   fragments.each do |fragment|
     count = fragment.scan(/^\d+ /)[0]
-    puts fragment.split(count)[-1]
     message_parts[count.to_i] = fragment.split(count)[-1]
   end
   sorted = message_parts.sort.to_h
