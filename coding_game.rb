@@ -220,3 +220,19 @@ puts (2..n).step(2).sum
 # Given a string, convert each character to ASCII
 
 string.chars.map(&:ord).join(' ')
+
+# *********************
+# sum of 1 to n
+
+puts (1..n).sum
+
+# *************************
+# You have to find the n-th term of arithmetic progression.
+# A is the first term of the arithmetic progression.
+# D is the common difference of the arithmetic progression.
+# 'N' stands for the term number
+
+a + (n - 1) * d
+
+# ****************
+
